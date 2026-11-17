@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Roadworthy</title>
+<meta name="description" content="How to put the Roadworthy driving log app on your Android phone.">
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1b1f24; --muted: #59636e;
+    --accent: #1f5fbf; --accent-text: #ffffff; --line: #dde1e6; --note: #fff6dd; --note-line: #f0d27a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121417; --card: #1c1f24; --text: #eceff3; --muted: #a3acb6;
+      --accent: #6ea4ff; --accent-text: #0b1526; --line: #30353c; --note: #2c2615; --note-line: #6b5a24;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 19px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 8px 0 8px; }
+  h2 { font-size: 23px; margin: 0 0 12px; }
+  p { margin: 0 0 12px; }
+  .lead { color: var(--muted); }
+  section {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 20px 18px; margin: 18px 0;
+  }
+  ol { margin: 0; padding-left: 1.4em; }
+  li { margin: 0 0 12px; padding-left: 4px; }
+  li:last-child { margin-bottom: 0; }
+  b { font-weight: 650; }
+  .download {
+    display: block; text-align: center; text-decoration: none;
+    background: var(--accent); color: var(--accent-text);
+    font-size: 22px; font-weight: 700; padding: 18px 16px; border-radius: 12px; margin: 16px 0 8px;
+  }
+  .small { font-size: 16px; color: var(--muted); }
+  .note {
+    background: var(--note); border: 1px solid var(--note-line); border-radius: 10px;
+    padding: 12px 14px; margin: 12px 0 0;
+  }
+  footer { text-align: center; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Roadworthy</h1>
+<p class="lead">Roadworthy keeps track of the hours a new driver practices with an adult in the car. You start it when the drive begins and stop it when the drive ends. It saves everything for you.</p>
+<p class="lead">It works on <b>Android</b> phones only. It does not work on iPhones.</p>
+
+<section id="install">
+  <h2>1. Put it on your phone</h2>
+  <p>Open this page <b>on your phone</b>, then tap the button.</p>
+  <a class="download" href="https://github.com/StumblingGamer/roadworthy-releases/releases/latest/download/Roadworthy.apk">Download Roadworthy</a>
+  <p class="small">This always gets the newest version.</p>
+  <ol>
+    <li>Your phone might say the file <b>could be harmful</b>. It is safe. You see this because the app is not in the Play Store. Tap <b>Download anyway</b>.</li>
+    <li>When it finishes, tap <b>Open</b>. (Or pull down from the top of the screen and tap the download.)</li>
+    <li>Your phone might say it <b>can't install apps from here</b>. Tap <b>Settings</b>, turn on the switch, then go back.</li>
+    <li>Tap <b>Install</b>.</li>
+    <li>If a warning says <b>unsafe app</b> or <b>unknown app</b>, tap <b>More details</b>, then <b>Install anyway</b>.</li>
+  </ol>
+  <p class="note">Now Roadworthy is with your other apps.</p>
+</section>
+
+<section id="start">
+  <h2>2. The first time you open it</h2>
+  <ol>
+    <li>Tap <b>New here? Create an account</b>. Type your email, make up a password, and tap <b>Create account</b>.</li>
+    <li>We send you an email. Open it and tap the link inside.
+      <p class="note"><b>Don't see the email?</b> Wait a few minutes, then look in your <b>Spam</b> or <b>Junk</b> folder.</p></li>
+    <li>Go back to Roadworthy. Fill in your name, your birthday and your state, tick the boxes, and tap <b>Continue</b>.</li>
+    <li>Did Dave send you a <b>code</b>? Tap <b>Join with a code</b> and type it in. Now you can see the driver.</li>
+  </ol>
+</section>
+
+<section id="drive">
+  <h2>3. Log a drive</h2>
+  <ol>
+    <li>Tap <b>Start drive</b> before you leave.</li>
+    <li>Drive. You can put the phone away.</li>
+    <li>When you get home, open Roadworthy and tap <b>Stop drive</b>.</li>
+    <li>Answer the questions about the drive and tap <b>Save drive</b>.</li>
+  </ol>
+</section>
+
+<section id="roadready">
+  <h2>Bring in your hours from RoadReady</h2>
+  <p>Did you already log drives in the <b>RoadReady</b> app? You can move them into Roadworthy so you don't lose them.</p>
+  <p><b>First, in RoadReady:</b></p>
+  <ol>
+    <li>Open RoadReady and go to the driver's <b>Driving Log</b> tab.</li>
+    <li>Tap <b>Export Driving Report</b>. The report opens.</li>
+    <li>Tap the <b>download</b> button to save it to your phone.</li>
+    <li>Watch for a message that says where it was saved. It's usually the <b>Downloads</b> folder.</li>
+  </ol>
+  <p style="margin-top:16px"><b>Then, in Roadworthy:</b></p>
+  <ol>
+    <li>At the top, tap the menu and pick the driver.</li>
+    <li>At the bottom, tap <b>Driver</b>.</li>
+    <li>Tap <b>Import hours from RoadReady</b>.</li>
+    <li>Tap the report. Look in <b>Recent</b> or <b>Downloads</b>. It's the newest file.</li>
+    <li>Roadworthy shows how many drives and hours it found. Check that it matches RoadReady, then tap <b>Import</b>.</li>
+  </ol>
+  <p class="note">If the driver's name is spelled differently in RoadReady, the import won't work. Ask Dave.<br>
+  Doing it twice is fine. Drives that are already there won't be added again.</p>
+</section>
+
+<section id="updates">
+  <h2>New versions</h2>
+  <p>When there's a new version, Roadworthy says so at the top of the screen. Tap <b>Update</b>.</p>
+  <p>The first time, your phone asks if Roadworthy can install apps. Turn on the switch, go back, and tap <b>Update</b> again. Then tap <b>Install</b>. Your drives are kept.</p>
+</section>
+
+<footer>
+  <p class="small">Need help? Ask Dave. This is a test version just for our family, so tell him if anything looks strange.</p>
+</footer>
+
+</main>
+</body>
+</html>
